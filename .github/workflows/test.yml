@@ -1,0 +1,25 @@
+name: Test Controle do Casal
+
+on:
+  pull_request:
+  push:
+    branches: [main, "repair/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - name: Run financial core tests
+        run: npm test
+      - name: Check JavaScript syntax
+        run: npm run check
