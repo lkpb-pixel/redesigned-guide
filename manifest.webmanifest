@@ -1,11 +1,13 @@
 {
   "name": "Controle do Casal",
-  "short_name": "Controle Casal",
-  "description": "Controle financeiro simples para Lucas Kaique e Mayra.",
+  "short_name": "Nosso Dinheiro",
+  "description": "Controle financeiro compartilhado para o casal.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f5f7fb",
+  "background_color": "#f4f6fa",
   "theme_color": "#111827",
   "lang": "pt-BR",
+  "orientation": "portrait-primary",
   "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
