@@ -1,0 +1,1 @@
+Release regression validation trigger for the production-ready hotfix.
